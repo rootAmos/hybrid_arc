@@ -1,5 +1,5 @@
-\
-### Hybrid Propulsion System Power Distribution Modeling Approach
+
+### Hybrid Propulsion System Model
 
 **Overview**
 - Four propeller pods
