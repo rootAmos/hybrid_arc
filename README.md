@@ -1,4 +1,3 @@
-
 ### Hybrid Propulsion System Model
 
 **Overview**
@@ -6,9 +5,11 @@
 - Two electric motors and one gas turbine per pod, connected mechanically via gearbox
 - Gas turbine capable of charging the batteries via the electric motor
 
+
 **Key Inputs**
-- *Pod Shaft Power Required* ($P_{\mathrm{pod}}$)
-- *GT Throttle Ratio* ($\lambda_{\mathrm{GT,pod}}$): ratio between the power supplied by the gas turbine and the power required by the pod
+- *Thrust required*: mission thrust required of each pod, according to flight profile (speed, altitude, flight path)
+- *Pod Shaft Power Required* ($P_{\mathrm{pod}}$): computed via propeller momentum theory model.
+- *GT Throttle Ratio* ($\lambda_{\mathrm{GT,pod}}$): ratio between the power supplied by the gas turbine and the power required by the pod. Can be set for each pod independently. 
 
 $$
 \lambda_{\mathrm{GT,pod}} = \frac{P_{\mathrm{gt}}}{P_{\mathrm{pod}}}
@@ -20,14 +21,15 @@ Where:
 - $\lambda_{\mathrm{GT,pod}} > 1$: Generation mode (GT charges batteries via E-motor)
 
 **Key Outputs**
-$$\begin{align*}
+\[
+\begin{align*}
 P_{\mathrm{gt}} &= \lambda_{\mathrm{GT,pod}} \times P_{\mathrm{pod}} \\
 \lambda_{\mathrm{GT}} &= \frac{P_{\mathrm{gt}}}{P_{\mathrm{gt,max}}} \\
 P_{\mathrm{e}} &= P_{\mathrm{pod}} - P_{\mathrm{gt}} \\
 \lambda_{\mathrm{motor}} &= \frac{P_{\mathrm{e}}}{N_{\mathrm{motors}} \times P_{\mathrm{motor,max}}} \\
 \gamma &= \frac{P_{\mathrm{e}}}{P_{\mathrm{pod}}}
 \end{align*}
-$$
+\]
 
 **Where**
 - $P_{\mathrm{gt}}$: Gas turbine mechanical power per pod
