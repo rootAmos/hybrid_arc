@@ -266,7 +266,7 @@ def main():
     climb_ang_grad =  x0 + r * np.exp(-k * x / len_climb)
     climb_ang_rad = np.arctan(climb_ang_grad/100)   
 
-    descent_ang_grad = -10
+    descent_ang_grad = -5
     descent_ang_rad = np.arctan(descent_ang_grad/100)
 
     # Build Flight Path Angle profile       
