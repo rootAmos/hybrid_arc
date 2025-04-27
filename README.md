@@ -20,8 +20,7 @@ Where:
 - $\lambda_{\mathrm{GT,pod}} > 1$: Generation mode (GT charges batteries via E-motor)
 
 **Key Outputs**
-$$
-\begin{align*}
+$$\begin{align*}
 P_{\mathrm{gt}} &= \lambda_{\mathrm{GT,pod}} \times P_{\mathrm{pod}} \\
 \lambda_{\mathrm{GT}} &= \frac{P_{\mathrm{gt}}}{P_{\mathrm{gt,max}}} \\
 P_{\mathrm{e}} &= P_{\mathrm{pod}} - P_{\mathrm{gt}} \\
