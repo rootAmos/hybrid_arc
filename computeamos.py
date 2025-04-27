@@ -67,7 +67,7 @@ class ComputeAtmos(om.ExplicitComponent):
 if __name__ == "__main__":
     import openmdao.api as om
 
-    p = om.Problem()
+    p = om.Problem(reports=False)
     model = p.model
 
     ivc = om.IndepVarComp()

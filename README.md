@@ -7,7 +7,7 @@
 
 
 **Key Inputs**
-- *Thrust required*: mission thrust required of each pod, according to flight profile (speed, altitude, flight path)
+- *Thrust required*: mission thrust required of each pod according to flight profile (speed, altitude, flight path) and aircract characteristics.
 - *Pod Shaft Power Required* ($P_{\mathrm{pod}}$): computed via propeller momentum theory model.
 - *GT Throttle Ratio* ($\lambda_{\mathrm{GT,pod}}$): ratio between the power supplied by the gas turbine and the power required by the pod. Can be set for each pod independently. 
 

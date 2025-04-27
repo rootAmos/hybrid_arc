@@ -101,7 +101,7 @@ class ComputePropeller(om.ExplicitComponent):
 if __name__ == "__main__":
     import openmdao.api as om
 
-    p = om.Problem()
+    p = om.Problem(reports=False)
     model = p.model
 
     mtom_lb = 86000 - 100 
