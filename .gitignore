@@ -9,6 +9,8 @@ develop-eggs/
 dist/
 downloads/
 eggs/
+__pycache__/
+problem_out/
 .eggs/
 lib/
 lib64/
@@ -55,3 +57,4 @@ results/
 *.jpg
 *.jpeg
 *.gif 
+*.html
